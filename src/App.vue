@@ -4,6 +4,7 @@
     <router-link to="/user">Users</router-link>
     <router-link to="/category">Categories</router-link>
     <router-link to="/period">Periodos</router-link>
+    <router-link to="/plan">Plans</router-link>
   </Menu>
   <router-view/>
 </template>

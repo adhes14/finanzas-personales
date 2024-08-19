@@ -151,6 +151,14 @@
       "periodId": "12e7d1f5e-8f6b-4c3b-9f1e-12e7d1f5e8f6b",
       "frequency": "daily",
       "estimated_amount": 100
+    },
+    {
+      "categoryId": "3W7XI5n",
+      "periodId": "-Uvz5Yc",
+      "frequency": "weekly",
+      "estimated_amount": 350,
+      "userId": "sPZoDWi",
+      "id": "jr16QEJ"
     }
   ],
   "financialRecords": [
