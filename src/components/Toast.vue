@@ -51,6 +51,7 @@ export default {
   cursor: pointer;
   opacity: 1;
   transition: opacity 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .toast.info {

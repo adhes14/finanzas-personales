@@ -32,7 +32,7 @@ export default {
 .toasts-container {
   position: fixed;
   top: 10px;
-  right: 10px;
+  left: calc(50% - 150px);
   z-index: 9999;
   display: flex;
   flex-direction: column;

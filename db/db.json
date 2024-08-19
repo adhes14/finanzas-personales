@@ -15,12 +15,6 @@
       ]
     },
     {
-      "id": "2e7d1f5e-8f6b-4c3b-9f1e-2e7d1f5e8f6b",
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com",
-      "password": "password123"
-    },
-    {
       "id": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b",
       "name": "Alice Johnson",
       "email": "alice.johnson@gmail.com",
@@ -45,6 +39,12 @@
       "email": "adhes@mail.com",
       "password": "adhes12321",
       "id": "sPZoDWi"
+    },
+    {
+      "name": "juan perez",
+      "email": "juan@email.com",
+      "password": "Juan4532",
+      "id": "_3qbsJb"
     }
   ],
   "categories": [
@@ -55,22 +55,36 @@
       "userId": "1e7d1f5e-8f6b-4c3b-9f1e-1e7d1f5e8f6b"
     },
     {
-      "id": "6e7d1f5e-8f6b-4c3b-9f1e-6e7d1f5e8f6b",
-      "name": "Groceries",
-      "type": "expense",
-      "userId": "2e7d1f5e-8f6b-4c3b-9f1e-2e7d1f5e8f6b"
-    },
-    {
       "id": "7e7d1f5e-8f6b-4c3b-9f1e-7e7d1f5e8f6b",
-      "name": "Rent",
+      "name": "Rent extra",
       "type": "expense",
-      "userId": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b"
+      "userId": "sPZoDWi",
+      "user": {
+        "id": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b",
+        "name": "Alice Johnson",
+        "email": "alice.johnson@gmail.com",
+        "password": "Jeremis123",
+        "categories": [
+          {
+            "id": "7e7d1f5e-8f6b-4c3b-9f1e-7e7d1f5e8f6b",
+            "name": "Rent",
+            "type": "expense",
+            "userId": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b"
+          }
+        ]
+      }
     },
     {
       "id": "8e7d1f5e-8f6b-4c3b-9f1e-8e7d1f5e8f6b",
       "name": "Freelance",
       "type": "income",
       "userId": "4e7d1f5e-8f6b-4c3b-9f1e-4e7d1f5e8f6b"
+    },
+    {
+      "name": "New Catergory",
+      "type": "expense",
+      "userId": "sPZoDWi",
+      "id": "3W7XI5n"
     }
   ],
   "periods": [
@@ -80,13 +94,6 @@
       "start_date": "2023-01-01",
       "end_date": "2023-01-31",
       "description": "January 2023"
-    },
-    {
-      "id": "10e7d1f5e-8f6b-4c3b-9f1e-10e7d1f5e8f6b",
-      "userId": "2e7d1f5e-8f6b-4c3b-9f1e-2e7d1f5e8f6b",
-      "start_date": "2023-02-01",
-      "end_date": "2023-02-28",
-      "description": "February 2023"
     },
     {
       "id": "11e7d1f5e-8f6b-4c3b-9f1e-11e7d1f5e8f6b",
