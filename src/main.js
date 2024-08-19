@@ -4,9 +4,11 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import toasts from './toasts'
 
 createApp(App)
   .use(store)
   .use(router)
   .use(VueAxios, axios)
+  .use(toasts)
   .mount('#app');
