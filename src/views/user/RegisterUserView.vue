@@ -58,6 +58,8 @@ export default {
 
       if (!this.form.password) {
         this.errors.password = 'Password is required';
+      } else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/.test(this.form.password)) {
+        this.errors.password = 'Password must have at least one uppercase letter, one lowercase letter, and one number';
       }
 
       return Object.keys(this.errors).length === 0;

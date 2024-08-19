@@ -43,18 +43,20 @@ export default {
     validateForm() {
       this.errors = {};
 
-      if (!this.item.name) {
+      if (!this.form.name) {
         this.errors.name = 'Name is required';
       }
 
-      if (!this.item.email) {
+      if (!this.form.email) {
         this.errors.email = 'Email is required';
-      } else if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(this.item.email)) {
+      } else if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(this.form.email)) {
         this.errors.email = 'Email is not valid';
       }
 
-      if (!this.item.password) {
+      if (!this.form.password) {
         this.errors.password = 'Password is required';
+      } else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/.test(this.form.password)) {
+        this.errors.password = 'Password must have at least one uppercase letter, one lowercase letter, and one number';
       }
 
       return Object.keys(this.errors).length === 0;

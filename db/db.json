@@ -23,8 +23,16 @@
     {
       "id": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b",
       "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "password": "password123"
+      "email": "alice.johnson@gmail.com",
+      "password": "Jeremis123",
+      "categories": [
+        {
+          "id": "7e7d1f5e-8f6b-4c3b-9f1e-7e7d1f5e8f6b",
+          "name": "Rent",
+          "type": "expense",
+          "userId": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b"
+        }
+      ]
     },
     {
       "id": "4e7d1f5e-8f6b-4c3b-9f1e-4e7d1f5e8f6b",
