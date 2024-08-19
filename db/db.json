@@ -1,0 +1,166 @@
+{
+  "users": [
+    {
+      "id": "1e7d1f5e-8f6b-4c3b-9f1e-1e7d1f5e8f6b",
+      "name": "John Doeasdfsa",
+      "email": "john.doe@example.com",
+      "password": "Jhon123",
+      "categories": [
+        {
+          "id": "5e7d1f5e-8f6b-4c3b-9f1e-5e7d1f5e8f6b",
+          "name": "Salary",
+          "type": "income",
+          "userId": "1e7d1f5e-8f6b-4c3b-9f1e-1e7d1f5e8f6b"
+        }
+      ]
+    },
+    {
+      "id": "2e7d1f5e-8f6b-4c3b-9f1e-2e7d1f5e8f6b",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "4e7d1f5e-8f6b-4c3b-9f1e-4e7d1f5e8f6b",
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "password": "password123"
+    },
+    {
+      "name": "adhemar",
+      "email": "adhes@mail.com",
+      "password": "adhes12321",
+      "id": "sPZoDWi"
+    }
+  ],
+  "categories": [
+    {
+      "id": "5e7d1f5e-8f6b-4c3b-9f1e-5e7d1f5e8f6b",
+      "name": "Salary",
+      "type": "income",
+      "userId": "1e7d1f5e-8f6b-4c3b-9f1e-1e7d1f5e8f6b"
+    },
+    {
+      "id": "6e7d1f5e-8f6b-4c3b-9f1e-6e7d1f5e8f6b",
+      "name": "Groceries",
+      "type": "expense",
+      "userId": "2e7d1f5e-8f6b-4c3b-9f1e-2e7d1f5e8f6b"
+    },
+    {
+      "id": "7e7d1f5e-8f6b-4c3b-9f1e-7e7d1f5e8f6b",
+      "name": "Rent",
+      "type": "expense",
+      "userId": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b"
+    },
+    {
+      "id": "8e7d1f5e-8f6b-4c3b-9f1e-8e7d1f5e8f6b",
+      "name": "Freelance",
+      "type": "income",
+      "userId": "4e7d1f5e-8f6b-4c3b-9f1e-4e7d1f5e8f6b"
+    }
+  ],
+  "periods": [
+    {
+      "id": "9e7d1f5e-8f6b-4c3b-9f1e-9e7d1f5e8f6b",
+      "userId": "1e7d1f5e-8f6b-4c3b-9f1e-1e7d1f5e8f6b",
+      "start_date": "2023-01-01",
+      "end_date": "2023-01-31",
+      "description": "January 2023"
+    },
+    {
+      "id": "10e7d1f5e-8f6b-4c3b-9f1e-10e7d1f5e8f6b",
+      "userId": "2e7d1f5e-8f6b-4c3b-9f1e-2e7d1f5e8f6b",
+      "start_date": "2023-02-01",
+      "end_date": "2023-02-28",
+      "description": "February 2023"
+    },
+    {
+      "id": "11e7d1f5e-8f6b-4c3b-9f1e-11e7d1f5e8f6b",
+      "userId": "3e7d1f5e-8f6b-4c3b-9f1e-3e7d1f5e8f6b",
+      "start_date": "2023-03-01",
+      "end_date": "2023-03-31",
+      "description": "March 2023"
+    },
+    {
+      "id": "12e7d1f5e-8f6b-4c3b-9f1e-12e7d1f5e8f6b",
+      "userId": "4e7d1f5e-8f6b-4c3b-9f1e-4e7d1f5e8f6b",
+      "start_date": "2023-04-01",
+      "end_date": "2023-04-30",
+      "description": "April 2023"
+    }
+  ],
+  "plans": [
+    {
+      "id": "13e7d1f5e-8f6b-4c3b-9f1e-13e7d1f5e8f6b",
+      "categoryId": "5e7d1f5e-8f6b-4c3b-9f1e-5e7d1f5e8f6b",
+      "periodId": "9e7d1f5e-8f6b-4c3b-9f1e-9e7d1f5e8f6b",
+      "frequency": "monthly",
+      "estimated_amount": 5000
+    },
+    {
+      "id": "14e7d1f5e-8f6b-4c3b-9f1e-14e7d1f5e8f6b",
+      "categoryId": "6e7d1f5e-8f6b-4c3b-9f1e-6e7d1f5e8f6b",
+      "periodId": "10e7d1f5e-8f6b-4c3b-9f1e-10e7d1f5e8f6b",
+      "frequency": "weekly",
+      "estimated_amount": 200
+    },
+    {
+      "id": "15e7d1f5e-8f6b-4c3b-9f1e-15e7d1f5e8f6b",
+      "categoryId": "7e7d1f5e-8f6b-4c3b-9f1e-7e7d1f5e8f6b",
+      "periodId": "11e7d1f5e-8f6b-4c3b-9f1e-11e7d1f5e8f6b",
+      "frequency": "monthly",
+      "estimated_amount": 1500
+    },
+    {
+      "id": "16e7d1f5e-8f6b-4c3b-9f1e-16e7d1f5e8f6b",
+      "categoryId": "8e7d1f5e-8f6b-4c3b-9f1e-8e7d1f5e8f6b",
+      "periodId": "12e7d1f5e-8f6b-4c3b-9f1e-12e7d1f5e8f6b",
+      "frequency": "daily",
+      "estimated_amount": 100
+    }
+  ],
+  "financialRecords": [
+    {
+      "id": "17e7d1f5e-8f6b-4c3b-9f1e-17e7d1f5e8f6b",
+      "planId": "13e7d1f5e-8f6b-4c3b-9f1e-13e7d1f5e8f6b",
+      "type": "income",
+      "amount": 5000,
+      "date": "2023-01-15",
+      "description": "January Salary",
+      "recurring": true
+    },
+    {
+      "id": "18e7d1f5e-8f6b-4c3b-9f1e-18e7d1f5e8f6b",
+      "planId": "14e7d1f5e-8f6b-4c3b-9f1e-14e7d1f5e8f6b",
+      "type": "expense",
+      "amount": 50,
+      "date": "2023-02-05",
+      "description": "Weekly Groceries",
+      "recurring": true
+    },
+    {
+      "id": "19e7d1f5e-8f6b-4c3b-9f1e-19e7d1f5e8f6b",
+      "planId": "15e7d1f5e-8f6b-4c3b-9f1e-15e7d1f5e8f6b",
+      "type": "expense",
+      "amount": 1500,
+      "date": "2023-03-01",
+      "description": "March Rent",
+      "recurring": true
+    },
+    {
+      "id": "20e7d1f5e-8f6b-4c3b-9f1e-20e7d1f5e8f6b",
+      "planId": "16e7d1f5e-8f6b-4c3b-9f1e-16e7d1f5e8f6b",
+      "type": "income",
+      "amount": 100,
+      "date": "2023-04-10",
+      "description": "Daily Freelance Work",
+      "recurring": true
+    }
+  ]
+}

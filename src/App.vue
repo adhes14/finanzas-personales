@@ -2,6 +2,7 @@
   <Menu>
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
+    <router-link to="/user">Users</router-link>
   </Menu>
   <router-view/>
 </template>
