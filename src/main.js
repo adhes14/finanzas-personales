@@ -5,6 +5,7 @@ import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import toasts from './toasts'
+import './assets/styles/styles.scss'
 
 createApp(App)
   .use(store)
