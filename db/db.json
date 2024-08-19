@@ -108,6 +108,19 @@
       "start_date": "2023-04-01",
       "end_date": "2023-04-30",
       "description": "April 2023"
+    },
+    {
+      "description": "New period 2",
+      "start_date": "2024-06-01",
+      "end_date": "2024-06-30",
+      "userId": "sPZoDWi",
+      "id": "-Uvz5Yc",
+      "user": {
+        "name": "adhemar",
+        "email": "adhes@mail.com",
+        "password": "adhes12321",
+        "id": "sPZoDWi"
+      }
     }
   ],
   "plans": [

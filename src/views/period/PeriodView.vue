@@ -1,12 +1,12 @@
 <template>
   <div>
     <Modal v-model:modelValue="showModalNuevo">
-      <RegisterCategoryView @on-register="onRegister($event)" />
+      <RegisterPeriodView @on-register="onRegister($event)" />
     </Modal>
     <Modal v-model:modelValue="showModalEdit">
-      <EditCategoryView @on-update="onUpdate($event)" :item="itemToEdit" />
+      <EditPeriodView @on-update="onUpdate($event)" :item="itemToEdit" />
     </Modal>
-    <h1>Categories</h1>
+    <h1>Periods</h1>
     <button @click="showModalNuevo = true" class="btn btn-primary">New</button>
     <button @click="buscar()" class="btn btn-lith" style="float:right">Search</button>
     <input type="search" style="float:right" v-model="textToSearch" @search="buscar()">
@@ -14,22 +14,24 @@
       <thead>
         <tr>
           <th>No.</th>
-          <th>Name</th>
-          <th>Type</th>
           <th>User</th>
+          <th>Description</th>
+          <th>Start Date</th>
+          <th>End Date</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="(item, index) in itemList" :key="index">
           <td>{{ 1 + index }}</td>
-          <td>{{ item.name }}</td>
-          <td>{{ item.type }}</td>
           <td>{{ item.user.name }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.start_date }}</td>
+          <td>{{ item.end_date }}</td>
           <td>
             <button @click="goPlans(item.id)" class="btn btn-info" style="margin-right: 15px;">Plans</button>
-            <button @click="edit(item)" class="btn btn-dark" style="margin-right: 15px;">Editar</button>
-            <button @click="Eliminar(item.id)" class="btn btn-danger">Eliminar</button>
+            <button @click="edit(item)" class="btn btn-dark" style="margin-right: 15px;">Edit</button>
+            <button @click="Eliminar(item.id)" class="btn btn-danger">Delete</button>
           </td>
         </tr>
       </tbody>
@@ -40,12 +42,11 @@
 <script>
 import { mapState, mapGetters, mapActions } from 'vuex'
 import Modal from '../../components/Modal.vue'
-import RegisterCategoryView from './RegisterCategoryView.vue'
-import EditCategoryView from './EditCategoryView.vue'
-
+import RegisterPeriodView from './RegisterPeriodView.vue'
+import EditPeriodView from './EditPeriodView.vue'
 
 export default {
-  name: 'CategoryView',
+  name: 'PeriodView',
   data() {
     return {
       currentPage: 1,
@@ -60,15 +61,14 @@ export default {
   components: {
     // Registro de componentes que se utilizaran.
     Modal,
-    RegisterCategoryView,
-    EditCategoryView
+    RegisterPeriodView,
+    EditPeriodView
   },
   methods: {
-    // métodos que se pueden llamar desde la plantilla o desde otras partes del componente.
     ...mapActions(['increment']),
     getList() {
       const vm = this;
-      this.axios.get(this.baseUrl + "/categories?_expand=user&q=" + this.textToSearch)
+      this.axios.get(this.baseUrl + "/periods?_expand=user&q=" + this.textToSearch)
         .then(function (response) {
           vm.itemList = response.data;
         })
@@ -77,7 +77,7 @@ export default {
         });
     },
     goPlans(id) {
-      this.$router.push("/categories/" + id + "/plans");
+      this.$router.push("/periods/" + id + "/plans");
     },
     edit(item) {
       this.itemToEdit = Object.assign({}, item);
@@ -86,7 +86,7 @@ export default {
     Eliminar(id) {
       if (confirm("¿Esta Seguro de eliminar el registro?")) {
         const vm = this;
-        this.axios.delete(this.baseUrl + "/categories/" + id)
+        this.axios.delete(this.baseUrl + "/periods/" + id)
           .then(function (response) {
             vm.getList();
             vm.$toast.show("Registro eliminado.", "danger");
@@ -95,7 +95,6 @@ export default {
             console.error(error);
           });
       }
-
     },
     buscar() {
       this.getList();
